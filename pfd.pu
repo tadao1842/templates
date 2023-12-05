@@ -1,0 +1,13 @@
+@startuml pfd
+!procedure $output($process, $output)
+	usecase $process
+	rectangle $output
+	$process -->> $output
+!endprocedure
+
+!procedure $input($process, $input)
+	usecase $process
+	rectangle $input
+	$input -->> $process
+!endprocedure
+@enduml
